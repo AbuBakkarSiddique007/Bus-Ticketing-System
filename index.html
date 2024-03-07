@@ -45,6 +45,42 @@
 
 <body class="font-raleway">
     <header>
+        <!-- nav section start -->
+        <div class="navbar bg-base-100 w-4/5 max-w-7xl mx-auto mt-8">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Destination</a></li>
+                        <li><a>Search</a></li>
+                    </ul>
+                </div>
+                <img src="images/bus-symbol-icon.png" height="100" width="100" alt="">
+                <a class="btn btn-ghost text-xl font-extrabold">P-Ticket</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li> <a>About</a> </li>
+                    <li><a>Destination</a></li>
+                    <li><a>Search</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <button class="btn btn-active "><img src="images/bus-icon.png" alt="">Bus</button>
+            </div>
+        </div>
+        <!-- nav section end -->
+
         <!-- Banner section start -->
         <section class="hero w-4/5 bg-cover h-[550px] rounded-3xl max-w-7xl mx-auto mt-8"
             style="background-image: url('images/banner.png');">
@@ -117,7 +153,7 @@
 
         <!-- PH Paribahan start -->
         <section id="PH-Paribahan"
-            class="mt-24 pb-24 border-t-2 border-solid border-primaryColor rounded-t-3xl bg-white">
+            class="mt-24 pb-24 border-t-2 border-solid border-primaryColor rounded-t-3xl bg-white w-4/5 max-w-7xl mx-auto mt-8">
             <div class="w-4/5 max-w-7xl mx-auto">
                 <h1 class="font-bold text-4xl mt-28 text-center">P.H Paribahan</h1>
                 <p class="text-lg font-medium text-gray-700 text-center mt-6 mb-12">
@@ -160,7 +196,7 @@
                             <div class="flex mt-3 mb-3">
                                 <p class="flex-1  text-grey-500 text-lg">Departure Time</p>
                                 <p class="flex-initial text-grey-900 font-semibold text-lg">
-                                    <time>09:00 PM</time>
+                                    09:00 PM
                                 </p>
                             </div>
                             <div class="flex justify-around gap-2 pt-3">
@@ -306,8 +342,9 @@
                             <input type="text" id="user-phone-number"
                                 class="w-4/5 h-11 p-3 rounded-lg border-2 border-slate-400"
                                 placeholder="Please Enter Your Phone Number"
-                                onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"
+                                onkeypress="return (event.charCode == 0 || (event.charCode >= 48 && event.charCode <= 57))"
                                 required disabled />
+
                             <br>
                             <br>
                             <h3 class="font-bold">Email ID</h3>
@@ -353,10 +390,35 @@
         </section>
     </main>
 
-    <footer>
-
+    <!-- Footer section start -->
+    <footer class="bg-black text-white w-4/5 max-w-7xl mx-auto mt-8 p-10">
+        <div class="container mx-auto py-10">
+            <section class="grid grid-cols-1 md:grid-cols-2 gap-8 justify-between">
+                <nav>
+                    <h4 class="text-xl font-semibold">Services</h4>
+                    <p class="text-sm">P-Ticket is a digital platform to enhance your daily community experience.</p>
+                </nav>
+                <nav>
+                    <h4 class="text-xl font-semibold">Download Our App</h4>
+                    <div class="flex items-center gap-4">
+                        <a href="#" class="text-white">
+                            <img src="images/playstore.png" alt="Google PlayStore" class="w-8 h-8">
+                        </a>
+                        <p class="text-sm font-medium">GET IT ON Google PlayStore</p>
+                    </div>
+                </nav>
+            </section>
+            <div class="flex justify-between mt-8">
+                <p class="text-sm font-medium">© All rights reserved, P-Ticket Services Limited. 2024</p>
+                <div class="flex gap-3">
+                    <a href="#" class="text-sm font-medium">Terms & Conditions</a>
+                    <a href="#" class="text-sm font-medium">Return & Refund Policy</a>
+                    <a href="#" class="text-sm font-medium">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
     </footer>
-
+    <!-- Footer section end -->
     <script src="scripts/index.js"></script>
 </body>
 
